@@ -5,7 +5,9 @@ namespace ResortsWorldWeb.Model
 {
     public class ApplicationDbContext : DbContext
     {
-        public DbSet<EntityResport> EntityResports { get; set; }
+        public DbSet<Resport> Resports { get; set; }
+        public DbSet<PartOfTheWorld> PartOfTheWorlds { get; set; }
+        public DbSet<Country> Countries { get; set; }
 
         // конфигурация контекста
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
