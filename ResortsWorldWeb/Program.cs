@@ -15,24 +15,6 @@ app.MapGet("/ping", async (context) =>
 });
 
 //CRUD
-/*app.MapGet("/all", async (HttpContext context, ApplicationDbContext db) =>
-{
-    //await context.Response.WriteAsJsonAsync(db.EntityResports.ToListAsync());
-
-    return await db.Resports.ToListAsync();
-});
-
-app.MapPost("/add", async (HttpContext context, ApplicationDbContext db) =>
-{
-    var entityResport = await context.Request.ReadFromJsonAsync<Resport>();
-
-    if(entityResport != null)
-    {
-        db.Resports.Add(entityResport);
-        db.SaveChanges();
-    }
-    return entityResport;
-});*/
 
 //                                 -=== Resport ===-
 
